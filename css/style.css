@@ -1,0 +1,188 @@
+/* Reset Css */
+
+body{
+  font-family: "Nunito", Arial, Helvetica, sans-serif;
+  background-color: #f7f7f7;
+}
+
+body,
+p,
+h1,
+ul,
+li,
+blockquote {
+  padding: 0px;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2.5rem;
+}
+
+/* NAVEGACAO */
+
+.navegacao{
+  margin-top: 50px;
+}
+
+.navegacao ul{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navegacao ul li a{
+  color: #000;
+  background-color: white;
+  padding: 15px 30px;
+  
+}
+
+.navegacao ul li a:hover{
+  border: 2px solid red;
+  padding: 20px 35px;
+}
+
+main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Content */
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 400px;
+  margin: 70px;
+  
+}
+
+.container section {
+  background-color: white;
+}
+
+.container section:nth-child(3) {
+  background-color: #f7f7f7;
+}
+
+.container::after{
+  display: flex;
+  position: absolute;
+  left: calc(50% - 24px);
+  top: calc(50% - 23%);
+  content: "";
+  background-color: #ff2400;
+  height: 3px;
+  width: 50px;
+}
+
+.item-1{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  padding: 40px;
+  gap: 20px;
+}
+
+.item-1 h1{
+  font-size: 2.2rem;
+}
+
+.item-1 p {
+  font-size: 1.2rem;
+}
+
+.item-1 a {
+  background-color: #ff2400;
+  padding: 15px 25px;
+  border-radius: 4px;
+  color: white;
+}
+
+.item-1 a:hover{
+  background-color: #cc0000;
+}
+
+.item-2 img{
+  width: 530px;
+  height: 400px;
+}
+
+.item-3 {
+  display: flex;
+  align-items: center; 
+  justfy-content: center;
+  padding: 40px;
+
+}
+
+.item-3 h1 {
+  color: #BEBDBF;
+  font-size: 3.5rem;
+  
+  text-align: right;
+}
+
+.item-4{
+  padding: 40px ;
+}
+
+.item-4 div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-area: 
+  "logo titulo"
+  "logo conteudo";
+  padding: 15px;
+}
+
+.item-4 div img{
+  grid-area: logo;
+
+}
+
+.item-4 div span{
+  grid-area: titulo;
+  margin-left: 40px;
+}
+
+
+.item-4 div p{
+  grid-area: conteudo;
+  padding: 5px;
+  margin-top: 25px;
+  margin-left: 35px;
+}
+
+.item-4 div:nth-child(odd){
+  background-color: #f7f7f7;
+}
+
+.item-4 div:hover{
+  border-left: 3px solid #ff2400;  
+}
+
+
+/* FOOTER */
+
+.footer{
+  background-color: white;
+  padding: 30px;
+}
+
+.footer p{
+  text-align: center;
+  font-size: 1.5rem;
+}
